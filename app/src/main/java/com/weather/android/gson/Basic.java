@@ -12,7 +12,7 @@ public class Basic {
     public String cityName;
 
     @SerializedName("id")
-    public int weatherId;
+    public String weatherId;
 
     //根据basic的数据结构，定义一个内部类(返回数据的格式)
     public class Update{

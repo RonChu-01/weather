@@ -1,5 +1,7 @@
 package com.weather.android.gson;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
 
 /**
@@ -22,7 +24,7 @@ public class Weather {
 
     //由于预报的信息返回数据有点特殊，这里做一个处理
     //daily_forecase包含一个数组
-    @SuppressWarnings("daily_forecase")
+    @SerializedName("daily_forecast")
     public List<Forecast> forecastList;
 
 }
